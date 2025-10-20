@@ -1,0 +1,15 @@
+.custom-navbar {
+  background-size: cover;
+  min-height: 100px; /* Adjust height as needed */
+}
+
+.nav-link-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black !important; /* Make text visible on background */
+  margin-left: 20px;
+}
+
+.nav-link-text:hover {
+  color: #ffcc00 !important; /* Highlight color on hover */
+}
