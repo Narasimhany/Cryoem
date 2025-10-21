@@ -36,7 +36,7 @@ const services = [
   {
     title: "Team Collaboration and Support",
     description:"Our Cryo-EM Cloud Application is designed to facilitate collaboration among research teams. With shared workspaces, real-time data sharing, and role-based access control, you can collaborate efficiently with colleagues across the globe. Additionally, our dedicated support team is available 24/7 to assist with any technical issues, ensuring that your research is never interrupted.",
-    image: "/consulation.jpeg",
+    image: "/screening.png",
   },
 ];
 

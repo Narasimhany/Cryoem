@@ -1,6 +1,5 @@
 .hero-section {
   height: 100vh;
-  background: linear-gradient(to right, #003366, #0055aa);
   color: white;
   display: flex;
   align-items: center;
@@ -8,6 +7,8 @@
   position: relative;
   overflow: hidden;
 }
+
+
 
 .hero-content {
   max-width: 800px;

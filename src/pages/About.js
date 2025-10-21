@@ -21,14 +21,14 @@ const About = () => {
         }}
       >
         <div className="overlay">
-          <h1 className="hero-title">About VitriFlow</h1>
+          <h1 className="hero-title">About SS Hexa</h1>
         </div>
       </div>
 
       <div className="about-logo">
         <center>
         <img
-          src="/Logo.png"
+          src="/logo.png"
           alt="Proteoma Logo"
         /></center>
       </div>

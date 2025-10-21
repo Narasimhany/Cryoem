@@ -18,9 +18,9 @@ export const NavBar = () => {
         <Navbar.Brand as={Link} to="/"
          style={{ marginLeft: "-95px" }}>
           <img
-            src="/Logo.png"   // keep Logo.png inside public/ folder
+            src="/logo.png"   // keep Logo.png inside public/ folder
             alt="CryoEM Logo"
-            height="150"
+            height="80"
             className="d-inline-block align-top"
           />
         </Navbar.Brand>
@@ -37,9 +37,9 @@ export const NavBar = () => {
             <Nav.Link as={Link} to="/services" style={{ fontSize: "1.5rem", fontWeight: "600", color: "black" }}>
               Services
             </Nav.Link>
-            <Nav.Link as={Link} to="/projects" style={{ fontSize: "1.5rem", fontWeight: "600", color: "black" }}>
+            {/*<Nav.Link as={Link} to="/projects" style={{ fontSize: "1.5rem", fontWeight: "600", color: "black" }}>
               Projects
-            </Nav.Link>
+            </Nav.Link>*/}
             <Nav.Link as={Link} to="/contactus" style={{ fontSize: "1.5rem", fontWeight: "600", color: "black" }}>
               Contact Us
             </Nav.Link>
