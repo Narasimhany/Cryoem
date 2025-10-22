@@ -1,19 +1,23 @@
 .services-section {
   padding: 4rem 0;
   background-color: #f8f9fa;
+  text-align: center;
 }
 
+/* Link styling */
 .card-link {
   text-decoration: none;
   color: inherit;
 }
 
+/* Service Card */
 .service-card {
   border: none;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
 }
 
 .service-card:hover {
@@ -21,17 +25,82 @@
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
+/* Image styling */
 .service-card img {
+  width: 100%;
   height: 200px;
-  max-height: 250px; /* You can adjust this value */
-  object-fit: contain
-
-  
+  max-height: 250px;
+  object-fit: contain;
 }
 
+/* Title */
 .service-card .card-title {
   font-size: 1rem;
   font-weight: 600;
   text-align: center;
   margin-top: 0.5rem;
+  padding: 0 0.5rem;
+}
+
+/* ✅ Layout container for services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0 2rem;
+  justify-items: center;
+}
+
+/* ✅ Medium screens (Tablets) */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+  }
+
+  .service-card img {
+    height: 180px;
+  }
+
+  .service-card .card-title {
+    font-size: 0.95rem;
+  }
+}
+
+/* ✅ Small screens (Phones) */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 0 1rem;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .service-card img {
+    height: 160px;
+  }
+
+  .service-card .card-title {
+    font-size: 0.9rem;
+  }
+}
+
+/* ✅ Very small phones */
+@media (max-width: 480px) {
+  .services-section {
+    padding: 2rem 0;
+  }
+
+  .service-card img {
+    height: 140px;
+  }
+
+  .service-card .card-title {
+    font-size: 0.85rem;
+  }
 }

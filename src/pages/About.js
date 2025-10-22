@@ -34,7 +34,7 @@ const About = () => {
       </div>
 
       {/* Content section */}
-      <Container className="about-content">
+      <Container fluid className="about-content">
         <h2>Our Mission</h2>
         <p>
           Designed to meet the growing demands of Cryo-electron microscopy (Cryo-EM) data analysis, our platform offers unparalleled scalability, robust security, seamless data management, and flexible pricing plans. Whether you're a small research lab or a large institution, our application is engineered to enhance your productivity, streamline your workflows, and help you achieve breakthrough results in the study of molecular structures.

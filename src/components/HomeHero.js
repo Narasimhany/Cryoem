@@ -17,7 +17,7 @@ const HomeHero = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <Container className="text-center hero-content">
+      <Container fluid className="text-center hero-content">
         <h1 className="hero-title">cryo-em</h1>
         <p className="hero-subtext">
           Our sample-to-structure Cryo-EM services enable novel therapeutic discovery for pharma and biotech companies.

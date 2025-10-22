@@ -26,7 +26,7 @@ const services = [
 const HomeServices = () => {
   return (
     <div className="services-section">
-      <Container>
+      <Container fluid>
         <Row className="g-4">
           {services.map((service, idx) => (
             <Col key={idx} md={6} lg={3}>

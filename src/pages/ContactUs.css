@@ -5,20 +5,24 @@
 
 /* Hero Section */
 .contact-hero {
-  
   height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+  text-align: center;
+  padding: 0 2rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .contact-hero h1 {
   font-size: 3rem;
   font-weight: bold;
-  
   padding: 1rem 2rem;
   border-radius: 8px;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 /* Form Section */
@@ -29,12 +33,14 @@
   background: #fff;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  text-align: left;
 }
 
 .contact-form-container h2 {
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
   color: #222;
+  text-align: center;
 }
 
 .contact-form {
@@ -43,6 +49,7 @@
   gap: 1rem;
 }
 
+/* Two-column layout for desktop */
 .form-row {
   display: flex;
   gap: 1rem;
@@ -52,6 +59,7 @@
   flex: 1;
 }
 
+/* Input & Textarea */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -63,8 +71,10 @@
 
 .contact-form textarea {
   resize: none;
+  min-height: 120px;
 }
 
+/* Submit Button */
 .contact-form button {
   background: #003366;
   color: white;
@@ -78,4 +88,78 @@
 
 .contact-form button:hover {
   background: #0055aa;
+}
+
+/* ✅ Tablet screens (≤ 992px) */
+@media (max-width: 992px) {
+  .contact-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-form-container {
+    max-width: 600px;
+    padding: 1.8rem;
+  }
+
+  .contact-form-container h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ✅ Mobile screens (≤ 768px) */
+@media (max-width: 768px) {
+  .contact-hero {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+
+  .contact-hero h1 {
+    font-size: 2rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .contact-form-container {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+
+  .form-row {
+    flex-direction: column; /* Stack input fields */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* ✅ Very small phones (≤ 480px) */
+@media (max-width: 480px) {
+  .contact-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .contact-form-container {
+    padding: 1rem;
+    margin: 1.5rem 0.8rem;
+  }
+
+  .contact-form-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .contact-form button {
+    font-size: 0.9rem;
+  }
 }

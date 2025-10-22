@@ -5,29 +5,33 @@
   justify-content: space-between;
   gap: 2rem;
   width: 100%;
-  padding-bottom: 4rem;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
 }
 
+/* Text section */
 .service-text {
   flex: 1;
-  padding-left: 8rem; /* Adds space around text */
-  padding-right: -3rem;
-  
+  padding: 0 5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertically center text */
+  justify-content: center;
+  text-align: left;
 }
 
 .service-text h2 {
-  font-size: 3rem; /* Increased font size */
+  font-size: 3rem;
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .service-text p {
-  font-size: 1.2rem; /* Increased font size */
+  font-size: 1.2rem;
   line-height: 1.8;
+  color: #333;
 }
 
+/* Image section */
 .service-image-wrapper {
   flex: 1;
   display: flex;
@@ -41,22 +45,78 @@
   height: auto;
   object-fit: cover;
   border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive layout */
+/* ✅ Large Tablets (≤ 992px) */
+@media (max-width: 992px) {
+  .service-block {
+    gap: 1.5rem;
+    padding: 3rem 1.5rem;
+  }
+
+  .service-text {
+    padding: 0 3rem;
+  }
+
+  .service-text h2 {
+    font-size: 2.4rem;
+  }
+
+  .service-text p {
+    font-size: 1.1rem;
+  }
+
+  .service-image {
+    max-width: 350px;
+  }
+}
+
+/* ✅ Tablets & Small Laptops (≤ 768px) */
 @media (max-width: 768px) {
   .service-block {
     flex-direction: column;
+    text-align: center;
+    padding: 3rem 1rem;
   }
 
-  .service-text,
-  .service-image-wrapper {
-    max-width: 100%;
-    padding: 1rem;
+  .service-text {
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .service-text h2 {
+    font-size: 2rem;
+  }
+
+  .service-text p {
+    font-size: 1rem;
   }
 
   .service-image {
     max-width: 100%;
-    height: auto;
+    margin-top: 1.5rem;
+  }
+}
+
+/* ✅ Phones (≤ 480px) */
+@media (max-width: 480px) {
+  .service-block {
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .service-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .service-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .service-image {
+    max-width: 100%;
+    border-radius: 6px;
   }
 }

@@ -8,6 +8,8 @@ import HomeHero from "./components/HomeHero";
 import HomeCTA from "./components/HomeCTA";
 import HomeServices from "./components/HomeServices";
 import Footer from "./components/Footer";
+import './responsive.css';
+
 
 function App() {
   return (
