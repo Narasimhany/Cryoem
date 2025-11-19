@@ -37,7 +37,7 @@ const HomeHero = () => {
             variant="outline-light"
             onClick={() => navigate("/about")}
           >
-            ABOUT SS Hexa
+            ABOUT Practi Cloud
           </Button>
         </div>
       </Container>

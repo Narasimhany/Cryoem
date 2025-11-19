@@ -21,7 +21,7 @@ const About = () => {
         }}
       >
         <div className="overlay">
-          <h1 className="hero-title">About SS Hexa</h1>
+          <h1 className="hero-title">About Practi Cloud</h1>
         </div>
       </div>
 
