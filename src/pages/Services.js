@@ -21,6 +21,14 @@ const services = [
   },
 
   {
+  title: "Feasibility Consultation",
+  description:
+    "A feasibility consultation is always free! If you’re new to cryo-EM, we’ll gladly walk you through the basics and determine if single particle analysis is the right method for your sample. We also provide expert-guided learning on the platform, workflow, and core concepts of cryo-EM analysis.",
+  image: "/screening.png",
+},
+
+
+  {
     title: "Seamless Data Management",
     description:
       "Managing large volumes of Cryo-EM data can be challenging, but our platform makes it simple. With intuitive data management tools, you can easily organize, access, and share your datasets. Our application supports a wide range of data formats and integrates seamlessly with existing data repositories, enabling smooth data transfer and collaboration across research teams.",

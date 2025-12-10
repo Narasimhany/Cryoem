@@ -1,0 +1,84 @@
+/* Section container */
+.home-features {
+  padding: 4rem 2rem;
+  background: #0f172a; /* dark navy as in your screenshot */
+  color: white;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* prevent layout leaks globally */
+.home-features * {
+  box-sizing: border-box;
+}
+
+/* Inner wrapper */
+.hf-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Title styling */
+.hf-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Subtext positioning */
+.hf-subtext {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* One-column vertical list */
+.hf-column {
+  max-width: 750px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Each item */
+.hf-item {
+  background: #1e293b; /* dark slate */
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  text-align: left;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.hf-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
+}
+
+/* Icon styling */
+.hf-icon {
+  font-size: 1.8rem;
+  color: #384ef8; /* cyan */
+  min-width: 40px;
+}
+
+/* Item title */
+.hf-item h3 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Item text */
+.hf-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}

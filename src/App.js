@@ -5,6 +5,7 @@ import Services from "./pages/Services";
 //import Projects from "./pages/Projects";
 import ContactUs from "./pages/ContactUs";
 import HomeHero from "./components/HomeHero";
+import HomeFeatures from "./components/HomeFeatures"; 
 import HomeCTA from "./components/HomeCTA";
 import HomeServices from "./components/HomeServices";
 import Footer from "./components/Footer";
@@ -22,6 +23,7 @@ function App() {
             <>
               <HomeHero />
               <HomeServices />
+              <HomeFeatures/>
               <HomeCTA />
             </>
           } />
